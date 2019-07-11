@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <Name>Empire State Building</Name>
+    <Guid>f3cf6d4b-23b5-4763-9647-2cc680ffc721</Guid>
+    <ProjectGuid>0d88e4aa-8376-4216-b9da-f7677969e55a</ProjectGuid>
+    <ModVersion>1</ModVersion>
+    <Teaser>Empire State Building</Teaser>
+    <Description>Empire State Building</Description>
+    <Authors>Del</Authors>
+    <SpecialThanks>
+    </SpecialThanks>
+    <AffectsSavedGames>true</AffectsSavedGames>
+    <SupportsSinglePlayer>true</SupportsSinglePlayer>
+    <SupportsMultiplayer>true</SupportsMultiplayer>
+    <SupportsHotSeat>true</SupportsHotSeat>
+    <CompatibleVersions>1.2,2.0</CompatibleVersions>
+    <AssemblyName>CWON_EmpireStateBuilding</AssemblyName>
+    <RootNamespace>CWON_EmpireStateBuilding</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="CWON_EmpireStateBuilding.Art.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)Civ6.targets" />
+</Project>
